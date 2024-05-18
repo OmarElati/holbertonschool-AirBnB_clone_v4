@@ -1,5 +1,13 @@
+<div align="center">
+  <h1>HBNB - The Console <img src="https://i.imgur.com/elr4ah9.png" width=55 align=center> </h1>
+</div>
+
+<img align="center" src="https://i.imgur.com/MQq3ABc.png" alt="Logo">
+
 # AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+This repository contains version 4 of a project to build a clone of the AirBnB website. This version implements a console and an API to manage program data. Console commands and the API allow the user to create, update, and destroy objects, as well as manage file storage, using a JSON serialization system or using MySQL as the database, Flask was also an implementation in this version.
+
+<img src="https://i.imgur.com/RNdxdXP.png" alt="Structure">
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -149,6 +157,24 @@ EOF  all  create  destroy  help  quit  show  update
 ** no instance found **
 (hbnb) quit
 ```
+
+## API
+
+This project have 6 entities, all HTTP methods are supported:
+* /amenities
+* /cities
+* /places
+* /reviews
+* /states
+* /users
+
+**Note:** Resources have relations.
+
+The available nested routes are:
+
+* /states/`<state_id>`/cities
+* /places/`<place_id>`/reviews
+* /cities/`<city_id>`/places
 
 ## Bugs
 No known bugs at this time. 
